@@ -1,4 +1,4 @@
-shinyTables <- function(data, stripted=F, bordered=F, hover=F, condensed=F, caption=NULL) {
+shinyTable <- function(data, stripted=F, bordered=F, hover=F, condensed=F, caption=NULL) {
   ##########################################
   # Checking the data is data frame is not #
   ##########################################
