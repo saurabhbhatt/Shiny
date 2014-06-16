@@ -11,9 +11,9 @@ shinyTable <- function(data, stripted=F, bordered=F, hover=F, condensed=F, capti
   ####################################
   for(i in seq_len(dim(data)[2])) {
     if(i==1){
-      thead <- tags$td(colnames(data)[1])
+      thead <- tags$th(colnames(data)[1])
     } else {
-      thead <- list(thead, tags$td(colnames(data)[i]))
+      thead <- list(thead, tags$th(colnames(data)[i]))
     }
   }
   thead <- tags$thead(thead)
