@@ -5,7 +5,7 @@ shinyTable <- function(data, stripted=F, bordered=F, hover=F, condensed=F, capti
   if(!is.data.frame(data)) {
     data <- as.data.frame(data)
   }
-  
+ #heloo 
   ####################################   
   # Creating the thead for the table #
   ####################################
