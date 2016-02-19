@@ -5,7 +5,7 @@ shinyTable <- function(data, stripted=F, bordered=F, hover=F, condensed=F, capti
   if(!is.data.frame(data)) {
     data <- as.data.frame(data)
   }
-  
+ #heloo 
   ####################################   
   # Creating the thead for the table #
   ####################################
@@ -13,7 +13,7 @@ shinyTable <- function(data, stripted=F, bordered=F, hover=F, condensed=F, capti
     if(i==1){
       thead <- tags$th(colnames(data)[1])
     } else {
-      thead <- tagList(thead, tags$th(colnames(data)[i]))
+      thead <- tag(thead, tags$th(colnames(data)[i]))
     }
   }
   thead <- tags$thead(thead)
